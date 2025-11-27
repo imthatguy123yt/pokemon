@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CritterCatchers — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CritterCatchers</h1>
+    <div id="player-info">Player: <span id="player-name">Trainer</span></div>
+  </header>
+
+  <main>
+    <section id="world">
+      <div id="controls">
+        <button id="explore-btn">Explore (encounter)</button>
+        <button id="heal-btn">Heal Party</button>
+        <button id="save-btn">Save</button>
+      </div>
+
+      <div id="log" class="panel">Welcome to CritterCatchers! Click Explore to encounter a wild critter.</div>
+    </section>
+
+    <aside id="party" class="panel">
+      <h2>Your Party</h2>
+      <ul id="party-list"></ul>
+    </aside>
+
+    <section id="battle-screen" class="panel hidden">
+      <h2>Battle</h2>
+      <div id="battle-area">
+        <div class="combatant" id="wild">
+          <div class="sprite">?</div>
+          <div class="info">
+            <div class="name" id="wild-name"></div>
+            <div class="hp"><span id="wild-hp"></span> HP</div>
+          </div>
+        </div>
+
+        <div class="combatant" id="player-combatant">
+          <div class="sprite">🙂</div>
+          <div class="info">
+            <div class="name" id="player-mon-name"></div>
+            <div class="hp"><span id="player-mon-hp"></span> HP</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="battle-actions">
+        <div id="moves"></div>
+        <button id="catch-btn">Throw Capture Orb</button>
+        <button id="run-btn">Run</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Original fan-game demo — no Pokémon IP used.</small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
