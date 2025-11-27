@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CritterField — Walk & Encounter Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="title">CritterField — Demo</div>
+    <div id="controls">
+      <button id="mute-btn">🔊</button>
+      <span id="log">Use arrow keys or WASD to move. Walk into tall grass to encounter wild critters.</span>
+    </div>
+  </div>
+
+  <canvas id="game" width="800" height="560"></canvas>
+
+  <!-- Simple modal battle overlay -->
+  <div id="battle" class="hidden">
+    <div class="battle-card">
+      <div id="battle-text">A wild Critter appears!</div>
+      <div class="battle-actions">
+        <button id="flee-btn">Flee</button>
+        <button id="capture-btn">Try Capture</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
