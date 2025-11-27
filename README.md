@@ -1,4 +1,4 @@
-# CritterCatchers (demo)
+# pokemon(demo)
 
 A small, original, Pokémon-inspired demo game — **all original names and assets**. Use it for learning, prototyping, or building a repository to fork.
 
